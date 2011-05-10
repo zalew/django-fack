@@ -1,5 +1,7 @@
+from __future__ import absolute_import
+
 from django.contrib import admin
-from models import Question, Topic
+from .models import Question, Topic
             
 class TopicAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug':('name',)}
