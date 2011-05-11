@@ -30,10 +30,3 @@ For more details, read on:
    getting-started
    customization
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-

@@ -19,7 +19,8 @@ FAQ entries can be edited in the admin, and also via the submit view (at
 ``<prefix>/submit``).
 
 The app's written with quite a bit of customization in mind; see
-:doc:`customization` for details.
+:doc:`customization` for details. You'll almost certain want to :ref:`customize
+the templates <custom-templates>` to make the app "fit in" to your site.
 
 Example Site
 ------------
