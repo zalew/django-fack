@@ -5,14 +5,14 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
-    name = 'django-faq',
-    version = '0.1.0',
+    name = 'django-fack',
+    version = '1.0a1',
     description = 'A simple FAQ application for Django sites.',
     long_description = read('README.rst'),
     
     author  ='Kevin Fricovsky',
     author_email = 'kfricovsky@gmail.com',
-    url = 'http://github.com/howiworkdaily/django-faq',
+    url = 'http://django-fack.rtfd.org/',
     
     packages = find_packages(exclude=['example']),
     zip_safe = False,
@@ -28,5 +28,5 @@ setup(
     ],
     
     install_requires = ['setuptools', 'Django >= 1.3'],
-    test_suite = "faq._testrunner.runtests"
+    test_suite = "fack._testrunner.runtests"
 )

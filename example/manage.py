@@ -6,7 +6,7 @@ import sys
 try:
     import faq
 except ImportError:
-    sys.stderr.write("django-faq isn't installed; trying to use a source checkout in ../faq.")
+    sys.stderr.write("django-fack isn't installed; trying to use a source checkout in ../fack.")
     sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from django.core.management import execute_manager

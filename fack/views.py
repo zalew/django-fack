@@ -12,7 +12,7 @@ from .forms import SubmitFAQForm
 
 class TopicList(ListView):
     model = Topic
-    template = "faq/topic_list.html"
+    template_name = "faq/topic_list.html"
     allow_empty = True
     context_object_name = "topics"
 
@@ -42,7 +42,7 @@ class TopicList(ListView):
 
 class TopicDetail(DetailView):
     model = Topic
-    template = "faq/topic_detail.html"
+    template_name = "faq/topic_detail.html"
     context_object_name = "topic"
     
     def get_context_data(self, **kwargs):
@@ -61,7 +61,7 @@ class TopicDetail(DetailView):
 
 class QuestionDetail(DetailView):
     queryset = Question.objects.active()
-    template = "faq/question_detail.html"
+    template_name = "faq/question_detail.html"
     
     def get_queryset(self):        
         topic = get_object_or_404(Topic, slug=self.kwargs['topic_slug'])

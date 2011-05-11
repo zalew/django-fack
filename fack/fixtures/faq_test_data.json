@@ -1,7 +1,7 @@
 [
   {
     "pk": 1, 
-    "model": "faq.topic", 
+    "model": "fack.topic", 
     "fields": {
       "sort_order": 0, 
       "name": "Silly questions", 
@@ -10,7 +10,7 @@
   }, 
   {
     "pk": 2, 
-    "model": "faq.topic", 
+    "model": "fack.topic", 
     "fields": {
       "sort_order": 1, 
       "name": "Serious questions", 
@@ -19,7 +19,7 @@
   }, 
   {
     "pk": 1, 
-    "model": "faq.question", 
+    "model": "fack.question", 
     "fields": {
       "status": 1, 
       "updated_by": 1, 
@@ -36,7 +36,7 @@
   }, 
   {
     "pk": 2, 
-    "model": "faq.question", 
+    "model": "fack.question", 
     "fields": {
       "status": 1, 
       "updated_by": 1, 
@@ -53,11 +53,11 @@
   }, 
   {
     "pk": 3, 
-    "model": "faq.question", 
+    "model": "fack.question", 
     "fields": {
       "status": 1, 
       "updated_by": 1, 
-      "text": "What is Django-FAQ?", 
+      "text": "What is Django-fack?", 
       "created_by": 1, 
       "topic": 2, 
       "created_on": "2011-05-09 15:40:55", 
@@ -65,7 +65,7 @@
       "answer": "A simple FAQ application for a Django powered site. This app follows\r\nseveral \"best practices\" for reusable apps by allowing for template overrides\r\nand extra_context arguments and such.\r\n", 
       "updated_on": "2011-05-09 15:40:55", 
       "protected": false, 
-      "slug": "what-is-django-faq"
+      "slug": "what-is-django-fack"
     }
   }
 ]
