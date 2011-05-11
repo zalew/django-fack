@@ -2,12 +2,7 @@
 Django-Fack
 ===========
 
-This is a simple FAQ application for a Django powered site. This app follows
-several "best practices" for reusable apps by allowing for template overrides
-and extra_context arguments and such.
-
-Features
-========
+This is a simple FAQ application for a Django powered site, featuring:
 
 * The basic Q&A model you'd expect.
 
