@@ -28,5 +28,6 @@ setup(
     ],
     
     install_requires = ['setuptools', 'Django >= 1.3'],
-    test_suite = "fack._testrunner.runtests"
+    test_suite = "fack._testrunner.runtests",
+    tests_require = ["mock"],
 )

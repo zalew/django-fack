@@ -81,6 +81,10 @@ viewable by the end user views.
 Contributing
 ============
 
+To run the tests, install tox__ (``pip install tox``) then run ``tox``.
+
+__ http://codespeak.net/tox/
+
 Development `takes place on GitHub`__. Bug reports, pataches, and pull requests
 are always welcome!
 
