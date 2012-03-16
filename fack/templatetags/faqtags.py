@@ -65,3 +65,28 @@ def faq_list(parser, token):
         raise template.TemplateSyntaxError("second argument to the %s tag must be 'as'" % args[0])
 
     return FaqListNode(num=args[1], varname=args[3])
+
+class TopicListNode(template.Node):
+    def __init__(self, varname):
+        self.varname = varname
+
+    def render(self, context):
+        context[self.varname] = Topic.objects.all()
+        return ''
+
+@register.tag
+def faq_topic_list(parser, token):
+    """
+    Returns a list of all FAQ Topics.
+
+    Example usage::
+        {% faq_topic_list as topic_list %}
+    """
+    args = token.split_contents()
+    if len(args) != 2:
+        raise template.TemplateSyntaxError("%s takes exactly two arguments" % args[0])
+    if args[1] != 'as':
+        raise template.TemplateSyntaxError("second argument to the %s tag must be 'as'" % args[0])
+
+    return TopicListNode(varname=args[2])
+

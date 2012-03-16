@@ -132,4 +132,12 @@ class FAQTagsNodeTests(django.test.TestCase):
         self.assertEqual(content, "")
         self.assert_("faqs" not in context,
                      "faqs variable shouldn't have been added to the context.")
-    
+   
+    def test_faq_topic_list(self):
+        context = template.Context()
+        node = faqtags.TopicListNode(varname="topic_list")
+        content = node.render(context)
+        self.assertEqual(content, "")
+        self.assert_("topic_list" in context, "topic_list should be in context")
+        self.assertEqual(len(context['topic_list']), 2)
+
