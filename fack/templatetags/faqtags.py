@@ -83,7 +83,7 @@ def faq_topic_list(parser, token):
         {% faq_topic_list as topic_list %}
     """
     args = token.split_contents()
-    if len(args) != 2:
+    if len(args) != 3:
         raise template.TemplateSyntaxError("%s takes exactly two arguments" % args[0])
     if args[1] != 'as':
         raise template.TemplateSyntaxError("second argument to the %s tag must be 'as'" % args[0])
