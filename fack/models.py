@@ -22,6 +22,10 @@ class Topic(models.Model):
     def __unicode__(self):
         return self.name
 
+    @models.permalink
+    def get_absolute_url(self):
+        return ('faq_topic_detail', [self.slug])
+
 class Question(models.Model):
     HEADER = 2
     ACTIVE = 1
@@ -65,6 +69,10 @@ class Question(models.Model):
     def __unicode__(self):
         return self.text
 
+    @models.permalink
+    def get_absolute_url(self):
+        return ('faq_question_detail', [self.topic.slug, self.slug])
+
     def save(self, *args, **kwargs):
         # Set the date updated.
         self.updated_on = datetime.datetime.now()
@@ -88,3 +96,4 @@ class Question(models.Model):
 
     def is_active(self):
         return self.status == Question.ACTIVE
+
