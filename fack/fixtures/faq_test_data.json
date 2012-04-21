@@ -1,6 +1,24 @@
 [
   {
     "pk": 1, 
+    "model": "auth.user", 
+    "fields": {
+      "username": "frank", 
+      "first_name": "", 
+      "last_name": "", 
+      "is_active": true, 
+      "is_superuser": true, 
+      "is_staff": true, 
+      "last_login": "2012-04-21T12:03:48.783", 
+      "groups": [], 
+      "user_permissions": [], 
+      "password": "pbkdf2_sha256$10000$JfEKewjP2qt9$/AkikFcmVRSGTuwS82UCadK0k8ejGs0/rz+JEHZ+LCE=", 
+      "email": "frank@revsys.com", 
+      "date_joined": "2012-04-21T12:03:48.783"
+    }
+  },
+  {
+    "pk": 1, 
     "model": "fack.topic", 
     "fields": {
       "sort_order": 0, 
