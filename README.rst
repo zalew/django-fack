@@ -12,7 +12,7 @@ This is a simple FAQ application for a Django powered site, featuring:
 
 * Built-in views to drill down by topic and question, and individual
   question detail pages (for permalinks).
-  
+
 * A view for users to submit new questions (with or without answers). These
   go into moderation queue and need to be marked "active" before they'll
   show up on the site.
@@ -27,7 +27,7 @@ __ http://django-fack.rtfd.org/
 Requirements
 ============
 
-Django 1.3+, Python 2.5+.
+Django 1.3+, Python 2.6+.
 
 Installation
 ============
@@ -56,16 +56,16 @@ There is a stand-alone example site distributed with the source in the
 
 1. Install django-Fack (see above).
 
-1. Run ``python manage.py syncdb`` 
+1. Run ``python manage.py syncdb``
 
    This assumes that sqlite3 is available; if not you'll need to change the
    ``DATABASES`` setting first.
 
-3. Load some example data by running 
+3. Load some example data by running
    ``python manage.py loaddata faq_test_data.json``
 
 4. Run ``python manage.py runserver`` and you will have the example site up and
-   running. The home page will have links to get to the available views as well    
+   running. The home page will have links to get to the available views as well
    as to the admin.
 
 The capability to submit an FAQ is available and works whether or not you are a

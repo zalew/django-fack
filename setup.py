@@ -6,18 +6,18 @@ def read(fname):
 
 setup(
     name = 'django-fack',
-    version = '1.0',
+    version = '1.1',
     description = 'A simple FAQ application for Django sites.',
     long_description = read('README.rst'),
     license = "BSD",
-    
+
     author  ='Kevin Fricovsky',
     author_email = 'kfricovsky@gmail.com',
     url = 'http://django-fack.rtfd.org/',
-    
+
     packages = find_packages(exclude=['example']),
     zip_safe = False,
-    
+
     classifiers = [
         'Development Status :: 3 - Alpha',
         'Environment :: Web Environment',
@@ -27,8 +27,8 @@ setup(
         'Programming Language :: Python',
         'Framework :: Django',
     ],
-    
-    install_requires = ['setuptools', 'Django >= 1.3'],
+
+    install_requires = ['Django >= 1.3'],
     test_suite = "fack._testrunner.runtests",
     tests_require = ["mock"],
 )
